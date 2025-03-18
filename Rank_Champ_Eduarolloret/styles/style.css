@@ -365,5 +365,209 @@ ul li a{
     border-right: none;
 }
 
+.hober_section{
+    display: flex;
+    flex-direction: column;
+    gap:48px;
+    padding: 120px 260px;  
+    background-color: #F3F3FF;
+    justify-content: center;
+
+  
+  }
+.hober_text{
+    color: var(--Brand-Color-Neutral, #071431);
+    font-family: Syne;
+    font-size: 48px;
+    font-weight: 600;
+
+
+}
+
+.hober_Start {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    gap:16px;
+  }
+  
+  .hober_Start > div {
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 30px;
+  }
+
+
+  .first_hober{
+    border-radius: 8px 8px 0px 0px;
+    padding: 5px;
+    background-image: url(/Images/image_2.png);
+    background-repeat: no-repeat;
+    gap:10px
+  }
+
+.image_upper{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 30px 240px 24px;
+}
+.image_lower{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    gap:20px
+}
+
+.first_step{
+   
+    display: flex;
+    justify-content: space-between;
+    gap:16px;
+   
+}
+.discount-btn{
+    border-radius: 2px;
+    background: var(--Brand-Color-Primary-Color, #B45C3D);      
+    color: var(--Neutral-N0, #FFFF);
+    font-family: Syne;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    border: none;
+    padding: 6px 12px;
+
+}
+.img_name{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+
+}
+.img_name_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile_img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.persion_name{
+    color: #6A7283;
+    font-family: Syne;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.text_number{
+    color: var(--Neutral-N200, #6A7283);
+    font-family: Syne;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+}
+.text_rating{
+    color: var(--Brand-Color-Secondary-Color-02, #1D2635);
+    font-family: Syne;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+.ja_solor{
+    color: var(--Secondary-950, #192A48);
+    font-family: Syne;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: left;
+    }
+ .tax{
+    color: var(--Neutral-N200, #6A7283);
+    font-family: Syne;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    }
+.tax_number{
+    color: var(--Brand-Color-Neutral, #071431);
+    font-family: Syne;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+.Tax_item{
+    text-align: left;
+}
+.tax_btn{
+    display: flex;
+    justify-content: space-between;
+    gap:15px
+}
+.btn_1{
+    border-radius: 999px;
+    background-color: #FEC100;
+    color: #071431;
+    font-family: Syne;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 24px;
+    display: flex;
+    gap: 8px;
+    border:none;
+    justify-content: center;
+    align-items: center;
+    
+    
+  
+}
+.btn_hober_1{
+    border-radius: 999px;
+    background-color: #FEC100;
+    color: #071431;
+    font-family: Syne;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 16px;
+    display: flex;
+    gap: 8px;
+    border:none;
+    align-items: center;
+
+}
+
+.btn_hober_2{
+    border-radius: 999px;
+    background-color: #FFFF;
+    color: #071431;
+    font-family: Syne;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 16px;
+    display: flex;
+    gap: 8px;
+    border:none;
+    align-items: center;
+
+}
+
+
+#btn_1_move{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+  
+
+
+
+
 
 
