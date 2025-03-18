@@ -562,6 +562,17 @@ ul li a{
     text-align: center;
     justify-content: center;
 }
+.save_two_image_upaded{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    border-radius: 50%;
+    background: var(--Neutral-N20, #F5F6F7);
+    padding: 5px;
+}
 
 
   
