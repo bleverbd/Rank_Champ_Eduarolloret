@@ -1,0 +1,25 @@
+.counter {
+    counter-reset: count 0; /* Start counter at 0 */
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff5722;
+    text-align: center;
+    margin-top: 50px;
+    
+    /* Animate counter */
+    animation: countUp 5s steps(100) forwards;
+  }
+  
+  .counter::before {
+    content: counter(count); /* Display counter value */
+  }
+  
+  @keyframes countUp {
+    0% {
+      counter-reset: count 0;
+    }
+    100% {
+      counter-reset: count 100; /* End at 100 */
+    }
+  }
+  
