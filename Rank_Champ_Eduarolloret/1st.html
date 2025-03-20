@@ -3,69 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Hover Effect</title>
+    <title>Profile Card Hover Effect</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
 
-        .btn_container {
+        .card {
+            width: 250px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
         }
 
-        .btn_hover_2 {
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .card p {
+            color: gray;
+            font-size: 14px;
+        }
+
+        /* Social Icons Section */
+        .social-icons {
+            position: absolute;
+            top: 20px;
+            right: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            opacity: 0;
+            transform: translateX(20px);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .social-icons a {
+            width: 30px;
+            height: 30px;
+            background: #d2691e;
+            color: white;
             display: flex;
             align-items: center;
-            gap: 8px; /* Space between text and image */
-            padding: 12px 20px;
+            justify-content: center;
+            border-radius: 50%;
+            text-decoration: none;
             font-size: 16px;
-            background-color: #007bff; /* Default button color */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
         }
 
-        .btn_hover_2 img {
-            width: 20px; /* Adjust image size */
-            transition: transform 0.3s;
+        /* Show icons on hover */
+        .card:hover .social-icons {
+            opacity: 1;
+            transform: translateX(0);
         }
 
-        .btn_hover_2:hover {
-        
-            transform: scale(1.05);
-        }
-
-        .btn_hover_2:hover img {
-            transform: scale(1.1);
-        }
     </style>
 </head>
 <body>
 
-    <div class="btn_container">
-        <button class="btn_hover_2">
-            View Details <img src="Images/btn.png" alt="Cart">
-        </button>
+    <div class="card">
+        <div class="social-icons">
+            <a href="#">S</a>
+            <a href="#">M</a>
+            <a href="#">L</a>
+            <a href="#">+</a>
+        </div>
+        <img src="https://i.pravatar.cc/250" alt="John Doe">
+        <h3>John Doe</h3>
+        <p>Engineer</p>
     </div>
 
 </body>
 </html>
-
-
-
-.hero_btn_1 img {
-    transition: transform 1s;
-}
-
-.hero_btn_1:hover img {
-    transform:  translate(10px);
-}
-
