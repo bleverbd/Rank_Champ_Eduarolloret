@@ -3,88 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Card Hover Effect</title>
+    <title>Navbar with Dynamic Focus</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        .card {
-            width: 250px;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .card h3 {
-            margin: 10px 0;
-            font-size: 20px;
-        }
-
-        .card p {
-            color: gray;
-            font-size: 14px;
-        }
-
-        /* Social Icons Section */
-        .social-icons {
-            position: absolute;
-            top: 20px;
-            right: 15px;
+        /* Basic Navbar Styling */
+        .navbar {
             display: flex;
-            flex-direction: column;
-            gap: 8px;
-            opacity: 0;
-            transform: translateX(20px);
-            transition: all 0.3s ease-in-out;
-        }
-
-        .social-icons a {
-            width: 30px;
-            height: 30px;
-            background: #d2691e;
-            color: white;
-            display: flex;
-            align-items: center;
             justify-content: center;
-            border-radius: 50%;
+            gap: 20px;
+            background-color: #f8f9fa;
+            padding: 15px;
+        }
+
+        /* Default Link Style */
+        .navbar a {
             text-decoration: none;
-            font-size: 16px;
+            color: black;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            position: relative;
+            transition: 0.3s;
         }
 
-        /* Show icons on hover */
-        .card:hover .social-icons {
-            opacity: 1;
-            transform: translateX(0);
+        /* Hover Effect */
+        .navbar a:hover {
+            color: #007bff;
         }
 
+        /* Focus Effect - Adds a Bottom Line */
+        .navbar a:focus {
+            outline: none; /* Removes default focus outline */
+        }
+
+        .navbar a:focus::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 100%;
+            height: 3px;
+            background-color: #007bff;
+        }
+
+        /* Default Focus (Only applies if nothing else is clicked) */
+        .navbar a.default::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 100%;
+            height: 3px;
+            background-color: #007bff;
+        }
+
+        /* Remove Default Focus when another link is clicked */
+        .navbar a:focus ~ .default::after {
+            content: none;
+        }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <div class="social-icons">
-            <a href="#">S</a>
-            <a href="#">M</a>
-            <a href="#">L</a>
-            <a href="#">+</a>
-        </div>
-        <img src="https://i.pravatar.cc/250" alt="John Doe">
-        <h3>John Doe</h3>
-        <p>Engineer</p>
-    </div>
+    <nav class="navbar">
+        <a href="#" class="default" autofocus>Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
 
 </body>
 </html>
