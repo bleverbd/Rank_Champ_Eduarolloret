@@ -299,12 +299,13 @@ ul li a {
   justify-content: center;
   gap: 25px;
 }
-
+.background_1{
+  
+}
 .hero {
   margin: 32px;
   border-radius: 32px;
-  background: linear-gradient(90deg, #071431 0%, rgba(21, 61, 151, 0) 76.55%),
-    url("../Images/image.jpg");
+
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
