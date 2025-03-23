@@ -299,26 +299,27 @@ ul li a {
   justify-content: center;
   gap: 25px;
 }
-.background_1{
+ .hero {
+    margin: 32px;
+    border-radius: 32px;
+    background-image: linear-gradient(90deg, #071431 0%, rgba(21, 61, 151, 0.00) 76.55%),url("../Images/image.jpg");
   
-}
-.hero {
-  margin: 32px;
-  border-radius: 32px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    height: 671px;
+    
+    
+  }
 
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: auto;
-  height: 671px;
-}
 .hero_title {
-  color: #ffff;
+  color: white;
   font-family: Syne;
   font-size: 64px;
   font-weight: 700;
 }
 .hero_description {
-  color: #ffff;
+  color:white;
   font-family: Syne;
   font-size: 24px;
   font-weight: 400;
@@ -360,7 +361,7 @@ ul li a {
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(2px);
-  color: #ffff;
+  color: white;
   font-family: Syne;
   font-size: 16px;
   font-weight: 500;
@@ -1103,6 +1104,16 @@ font-weight: 400;
   font-weight: 600;
 
 }
+.Benefits_card_1:hover{
+  transform: translateX(10px);
+}
+.Benefits_card_2:hover{
+  transform: translateX(10px);
+}
+.Benefits_card_3:hover{
+  transform: translateX(10px);
+}
+
 .Benefits_card_1{
   display: flex;
   flex-direction: column;
@@ -1169,6 +1180,7 @@ font-weight: 400;
   bottom: 0;
  
 }
+
 .Benefits_card_bg_2{
   position: absolute;
   bottom: 50px;
