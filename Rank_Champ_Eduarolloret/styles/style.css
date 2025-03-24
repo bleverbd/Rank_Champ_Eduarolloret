@@ -451,6 +451,8 @@ ul li a {
   justify-content: center;
   position: relative;
   height: 1200px;
+  background-color: #F3F3FF;
+  height: 1432px;
 }
 .hober_text {
   color: var(--Brand-Color-Neutral, #071431);
@@ -481,6 +483,7 @@ ul li a {
 
 .card:hover .btn_hober_2 {
   background-color: #fec100;
+  border: none;
 }
 
 .btn_hober_2 img {
@@ -1109,13 +1112,13 @@ font-weight: 400;
 
 }
 .Benefits_card_1:hover{
-  transform: translateX(10px);
+  transform: translateY(-10px);
 }
 .Benefits_card_2:hover{
-  transform: translateX(10px);
+  transform: translateY(-10px);
 }
 .Benefits_card_3:hover{
-  transform: translateX(10px);
+  transform: translateY(-10px);
 }
 
 .Benefits_card_1{
@@ -1126,9 +1129,10 @@ font-weight: 400;
   background-color:  #FAEDFF;
   padding: 32px;
   z-index: 20;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   position: relative;
   overflow: hidden;
+  height: 230px;
 
 }
 .Benefits_card_2{
@@ -1139,11 +1143,12 @@ font-weight: 400;
   border-radius: 16px;
   background-color:  #EBF7EF;
   padding: 32px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   position: relative;
   height: 200px;
   height: 200px;
   overflow: hidden;
+  height: 230px;
 }
 .Benefits_card_3{
   display: flex;
@@ -1153,9 +1158,10 @@ font-weight: 400;
   background-color: #FFF9E6;
   padding: 32px;
   z-index: 20;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   position: relative;
   overflow: hidden;
+  height: 230px;
 
 }
 .card_bg{
